@@ -224,9 +224,7 @@ const CourseSingle = () => {
     authenticate();
   };
 
-  const signUpEvent = (e, eventId, courseId) => {
-    // e.preventDefault();
-
+  const signUpEvent = (eventId, courseId) => {
     const formData = new FormData();
     formData.append('user_id', user.id);
     formData.append('event_id', eventId);
@@ -278,24 +276,21 @@ const CourseSingle = () => {
                       </div>
                     )}
                   </p>
-                  {alreadyBought && (
-                    <p className='single-course__sign-up-expire-date'>
-                      Po dokonaniu opłaty kurs i jego materiały będą dostępne
-                      do:
-                      <br />
-                      <span className='single-course__sign-up-date'>
-                        {`${new Intl.DateTimeFormat('pl-PL', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                          hour: 'numeric',
-                          minute: 'numeric',
-                        }).format(
-                          new Date().setMonth(new Date().getMonth() + 1),
-                        )}`}
-                      </span>
-                    </p>
-                  )}
+                  <p className='single-course__sign-up-expire-date'>
+                    Po dokonaniu opłaty kurs i jego materiały będą dostępne do:
+                    <br />
+                    <span className='single-course__sign-up-date'>
+                      {`${new Intl.DateTimeFormat('pl-PL', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        hour: 'numeric',
+                        minute: 'numeric',
+                      }).format(
+                        new Date().setMonth(new Date().getMonth() + 1),
+                      )}`}
+                    </span>
+                  </p>
                   <div className='single-course__sign-up-buttons'>
                     <button
                       onClick={signUp}
@@ -368,7 +363,6 @@ const CourseSingle = () => {
                       <button
                         onClick={(e) =>
                           signUpEvent(
-                            e,
                             selectedCalendarEvent.id,
                             selectedCalendarEvent.course_id,
                           )
@@ -433,7 +427,7 @@ const CourseSingle = () => {
                   </>
                 )}
                 {/* jeżeli użytkownik kupił kurs to wyświetla do kiedy jest dostępny */}
-                {userCourseData.length > 0 && (
+                {alreadyBought && (
                   <>
                     <p className='single-course__expire-date-container'>
                       Kurs i jego materiały będą dostępne do:{' '}
@@ -498,8 +492,14 @@ const CourseSingle = () => {
                     )
                     .sort((a, b) => new Date(a.date) - new Date(b.date))
                     .map((event, i) => {
-                      const { id, title, description, date, youtubeLink } =
-                        event;
+                      const {
+                        id,
+                        course_id,
+                        title,
+                        description,
+                        date,
+                        youtubeLink,
+                      } = event;
 
                       return (
                         <div key={id}>
@@ -549,7 +549,7 @@ const CourseSingle = () => {
                                 </p>
                                 <div className='single-course__event-info-buttons'>
                                   <button
-                                    onClick={() => signUpEvent(id)}
+                                    onClick={() => signUpEvent(id, course_id)}
                                     className='single-course__event-info-accept-btn'
                                   >
                                     Zapisuję się
