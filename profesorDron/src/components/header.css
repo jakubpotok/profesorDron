@@ -1,0 +1,247 @@
+/** @format */
+
+.header {
+  background-color: white;
+  border-bottom: 0.1rem solid #e7e7e7;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  outline: 0;
+  height: 7rem;
+  color: var(--color-text);
+}
+
+.header__logged-as {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__left-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 12rem;
+  margin-bottom: 32px;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  margin-left: 4rem;
+  font-weight: 600;
+  transition: color 0.3s;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__item:hover,
+.header__dropdown-item:hover,
+.header__dropdown-main:hover {
+  color: var(--color-secondary);
+}
+
+.header__right-section {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header__dropdown-main {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+  cursor: default;
+}
+
+.header__dropup-icon {
+  display: none;
+}
+
+.header__dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 280px;
+  margin-left: 48px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 50;
+}
+
+.header__dropdown:hover .header__dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__dropdown:hover .header__dropdown-icon {
+  display: none;
+}
+
+.header__dropdown:hover .header__dropup-icon {
+  display: block;
+}
+
+.header__dropdown-items {
+  margin-left: 1rem;
+}
+
+.header__dropdown-item {
+  font-weight: 600;
+  transition: color 0.3s;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.header__dropdown-admin-title {
+  font-weight: 700;
+  color: rgb(227, 0, 0);
+  margin-bottom: 0.5rem;
+}
+
+.header__dropdown-underline {
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__dropdown-teacher-title {
+  font-weight: 700;
+  color: var(--color-primary-darker);
+  margin-bottom: 0.5rem;
+}
+
+.header__btns {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+.header__btns:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.header__menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hide-sidebar {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+  position: fixed !important;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -19px 19px 25px -31px rgba(66, 68, 90, 1);
+}
+
+.sidebar__items {
+  margin-top: 8.2rem;
+}
+
+.sidebar__admin-panel {
+  font-weight: 700;
+  color: rgb(227, 0, 0);
+}
+
+.sidebar__teacher-panel {
+  font-weight: 700;
+  color: var(--color-primary-darker);
+}
+
+.sidebar__item {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+
+.sidebar__item-menu {
+  display: block;
+  color: inherit;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sidebar__item:hover {
+  color: var(--color-secondary);
+}
+
+.sidebar__item:active {
+  color: var(--color-secondary);
+}
+
+@media (min-width: 1165.1px) {
+  .sidebar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1165px) {
+  .header__items {
+    display: none;
+  }
+
+  .header__menu-icon {
+    display: inline-block;
+    size: 70px;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 645px) {
+  .header__btns {
+    display: none;
+  }
+}

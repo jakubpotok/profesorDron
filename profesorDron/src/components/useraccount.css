@@ -1,0 +1,159 @@
+/** @format */
+.user-account__main {
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+.user-account__container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.user-account {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+  padding: 2.5rem;
+}
+
+.user-account__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-account-logged-as {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.user-account__username {
+  font-size: 3rem;
+}
+
+.user-account__role {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.user-account__role #user-role {
+  font-weight: 600;
+  color: var(--color-primary-darker);
+}
+
+.user-account__role #user-admin {
+  font-weight: 600;
+  color: rgb(227, 0, 0);
+}
+
+.user-account__email #user-email {
+  font-weight: 600;
+}
+
+.user-account__change-email-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.user-account__change-email-button:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.user-account__money {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-account__money #user-money {
+  font-weight: 600;
+}
+
+.user-account__get-money-title {
+  font-size: 1.2rem;
+}
+
+.user-account__get-money-input {
+  font-size: 1.1rem;
+  max-width: 120px;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+}
+
+.user-account__get-money-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 0.8rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.user-account__get-money-button:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.user-account__get-money-success-msg {
+  background-color: rgb(0, 171, 0);
+  color: white;
+  width: 100%;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.user-account__get-money-err-msg {
+  background-color: rgb(235, 0, 0);
+  color: white;
+  width: 100%;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.user-account__underline {
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-account__become-teacher-text {
+  font-size: 1.2rem;
+}
+
+#become-teacher-text {
+  font-weight: 600;
+}
+
+.user-account_become-teacher-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.user-account_become-teacher-button:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}

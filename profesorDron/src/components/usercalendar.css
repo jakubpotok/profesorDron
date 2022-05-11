@@ -1,0 +1,209 @@
+/** @format */
+
+@media (min-width: 1320px) {
+  .user-calendar__my-events-calendar-container {
+    width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+.user-calendar__main {
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+.user-calendar__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.user-calendar__choice-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.user-calendar__events-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+.user-calendar__events-button:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.user-calendar__no-events-found {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.user-calendar__no-events-found a {
+  text-decoration: none;
+  color: var(--color-primary-darker);
+  transition: color 0.5s;
+}
+
+.user-calendar__no-events-found a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.user-calendar__events-type {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.fc-daygrid-event-harness {
+  cursor: pointer;
+  /* background-color: red !important; */
+}
+
+.fc-h-event {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.fc-h-event:hover {
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+}
+
+/* Event Info Modal */
+.user-calendar__event-info {
+  display: none;
+  position: fixed;
+  z-index: 180;
+  padding-top: 113px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.user-calendar__event-info-container {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  max-width: 814px;
+  box-shadow: 1px 1px 1px 0px #ebebf2;
+  padding: 2rem 3rem;
+  margin: auto;
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.user-calendar__event-info-close {
+  color: red;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-calendar__event-info-h3 {
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.user-calendar__event-info-course-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.user-calendar__event-info-course-title a {
+  text-decoration: none;
+  color: var(--color-primary-darker);
+  transition: color 0.5s;
+}
+
+.user-calendar__event-info-course-title a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.user-calendar__event-info-date-container {
+  font-size: 1.3rem;
+}
+
+.user-calendar__event-info-date {
+  font-weight: 600;
+}
+
+.user-calendar__event-info-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+  line-height: 2.5rem;
+}
+
+.user-calendar__event-info-buttons {
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.user-calendar__event-info-buttons button {
+  color: white;
+  border: 1px solid white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+.user-calendar__event-info-accept-btn {
+  background-color: green;
+  padding: 0.6rem 1.4rem;
+  margin-right: 2rem;
+}
+
+.user-calendar__event-info-accept-btn:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+
+.user-calendar__event-info-signOut-btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.user-calendar__event-info-signOut-btn {
+  background-color: black;
+  padding: 0.6rem 1.4rem;
+  margin-right: 2rem;
+}
+
+.user-calendar__event-info-cancel-btn {
+  background-color: red;
+  padding: 0.6rem 3rem;
+}
+
+.user-calendar__event-info-cancel-btn:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+
+.user-calendar__event-underline {
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}

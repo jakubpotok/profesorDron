@@ -1,0 +1,17 @@
+/** @format */
+
+.courses__container-link {
+  display: flex;
+  justify-content: center;
+}
+
+.courses__link {
+  text-decoration: none;
+  color: var(--color-primary-darker);
+  transition: color 0.3s;
+}
+
+.courses__link:hover {
+  text-decoration: underline;
+  color: var(--color-secondary);
+}

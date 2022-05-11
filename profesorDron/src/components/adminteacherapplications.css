@@ -1,0 +1,130 @@
+/** @format */
+.teacher-applications__main {
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+.teacher-applications__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.teacher-applications {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+  padding: 2.5rem;
+}
+
+.teacher-applications__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teacher-applications-info-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.teacher-applications__underline {
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.teacher-applications_become-teacher-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.teacher-applications_become-teacher-button:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.teacher-applications__applications {
+  border-left: 1px solid #d1d7dc;
+  border-right: 1px solid #d1d7dc;
+  border-bottom: 1px solid #d1d7dc;
+}
+
+.teacher-applications__single-application {
+  display: flex;
+  align-items: center;
+  max-width: 918px;
+  border-top: 1px solid #d1d7dc;
+  background-color: #f7f9fa;
+  padding: 1.6rem 2.4rem;
+}
+
+.teacher-applications__single-application-title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.teacher-applications__single-application-button-container {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.teacher-applications__single-application-button {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.8rem 2rem;
+  margin: 0 0.9rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.teacher-applications__single-application-accept-btn {
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+}
+
+.teacher-applications__single-application-accept-btn:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+
+.teacher-applications__single-application-deny-btn {
+  padding: 0.8rem 2.35rem;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+
+.teacher-applications__single-application-deny-btn:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+
+@media (max-width: 780px) {
+  .teacher-applications__single-application {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .teacher-applications__single-application-title {
+    margin-bottom: 20px;
+  }
+
+  .teacher-applications__single-application-button {
+    margin-bottom: 10px;
+  }
+}

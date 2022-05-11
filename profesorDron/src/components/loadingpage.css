@@ -1,0 +1,14 @@
+/** @format */
+
+.loading {
+  padding-top: 35px;
+  padding-bottom: 18rem;
+}
+
+.loading__container {
+  /* max-width: 414px; */
+  padding: 2rem 3rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}

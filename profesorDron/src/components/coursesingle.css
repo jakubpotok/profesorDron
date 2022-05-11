@@ -1,0 +1,374 @@
+/** @format */
+.single-course__main {
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+.single-course__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.single-course {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+  padding: 2.5rem;
+}
+
+.single-course__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-course__image {
+  width: 540px;
+  height: 304px;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 2rem;
+  border-radius: 15px;
+}
+
+.single-course__description {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+}
+
+.single-course__author {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.single-course__author a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.5s;
+}
+
+.single-course__author a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.single-course__price--tag {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.single-course__price {
+  font-weight: 700;
+}
+
+.single-course__sign-up--btn {
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.single-course__sign-up--btn:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.single-course__expire-date {
+  font-weight: 600;
+}
+
+/* sign up modal */
+.single-course__sign-up {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.single-course__sign-up__container {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  max-width: 814px;
+  box-shadow: 1px 1px 1px 0px #ebebf2;
+  padding: 2rem 3rem;
+  margin: auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.single-course__sign-up__h3 {
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.single-course__sign-up-money {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.single-course__sign-up-money #user-money {
+  font-weight: 600;
+}
+
+.single-course__sign-up-money #course-price {
+  font-weight: 600;
+}
+
+.single-course__sign-up-err-msg {
+  background-color: rgb(235, 0, 0);
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.4rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.single-course__sign-up-expire-date {
+  font-size: 1.1rem;
+}
+
+.single-course__sign-up-date {
+  font-weight: 600;
+}
+
+.single-course__sign-up-buttons {
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.single-course__sign-up-buttons button {
+  color: white;
+  border: 1px solid white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+.single-course__sign-up-accept-btn {
+  background-color: green;
+  padding: 0.6rem 1.4rem;
+  margin-right: 2rem;
+}
+
+.single-course__sign-up-accept-btn:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+
+.single-course__sign-up-cancel-btn {
+  background-color: red;
+  padding: 0.6rem 3rem;
+}
+
+.single-course__sign-up-cancel-btn:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+
+/* Event Info Modal */
+.single-course__event-info {
+  display: none;
+  position: fixed;
+  z-index: 180;
+  padding-top: 113px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.single-course__event-info__container {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  max-width: 814px;
+  box-shadow: 1px 1px 1px 0px #ebebf2;
+  padding: 2rem 3rem;
+  margin: auto;
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.single-course__event-info__close {
+  color: red;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.single-course__event-info__h3 {
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.single-course__event-info-date-container {
+  font-size: 1.3rem;
+}
+
+.single-course__event-info-date {
+  font-weight: 600;
+}
+
+.single-course__event-info-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+  line-height: 2.5rem;
+}
+
+.single-course__event-info-buttons {
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.single-course__event-info-buttons button {
+  color: white;
+  border: 1px solid white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+.single-course__event-info-accept-btn {
+  background-color: green;
+  padding: 0.6rem 1.4rem;
+  margin-right: 2rem;
+}
+
+.single-course__event-info-accept-btn:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+
+.single-course__event-info-cancel-btn {
+  background-color: red;
+  padding: 0.6rem 3rem;
+}
+
+.single-course__event-info-cancel-btn:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+
+.single-course__event-underline {
+  border-bottom: 1px solid rgb(227, 227, 227);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.single-course__single-event-info {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #d1d7dc;
+  background-color: #f7f9fa;
+  padding: 1.6rem 2.4rem;
+}
+
+.single-course__single-event-info-date {
+  width: 135px;
+  font-weight: 500;
+}
+
+.single-course__single-event-info-title {
+  flex: 1;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.single-course__single-event-info-manage-btn {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.8rem 2rem;
+  margin-left: 1.9rem;
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.single-course__single-event-read-more-btn {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.8rem 2rem;
+  margin-left: 1.9rem;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.8rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.single-course__single-event-read-more-btn:hover {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+@media (max-width: 1280px) {
+  .single-course__info {
+    flex-direction: column-reverse;
+  }
+
+  .single-course__image {
+    width: 48%;
+    height: 100%;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .single-course__single-event-info {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .single-course__single-event-read-more-btn {
+    width: 200px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .single-course__single-event-info-title {
+    margin-left: 0;
+  }
+}
